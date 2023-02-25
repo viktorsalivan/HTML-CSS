@@ -10,6 +10,11 @@ html {
 
 a {
     text-decoration: none;
+   
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.55);
 }
 
 ul {
@@ -45,16 +50,13 @@ ul {
 /* !Header */
 
 .style-header {
-    height: 110px;
+    height: 150px;
     border-bottom: 1px solid #e4e4e4;
 }
 
-.сontainer {
+.container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+
 }
 
 .header-container {
@@ -66,9 +68,15 @@ ul {
 
 
 
-.nav-list {
+.navbar {
     display: flex;
     margin: auto;
+}
+
+
+
+.navbar-brand {
+    margin-right: 50px;
 }
 
 .nav-item {
@@ -77,17 +85,11 @@ ul {
     color: #1c1c1c;
 }
 
-.nav-link {
-    color: #1c1c1c;
-}
-
-.nav-item.Is-Active .nav-link {
-    color: #3172b9
-}
-
 .header-btn {
     margin-left: 40px;
 }
+
+
 
 .btn {
     display: inline-block;
@@ -103,17 +105,9 @@ ul {
 
 .btn.big-btn {
     padding: 20px 60px;
+    
 }
 
-.btn:hover{
-    box-shadow: 0px 0 5px #3172b9;
-    cursor: pointer;
-    border:  2px solid #3172b9;
-}
-
-.btn-submit:hover{
-    border: 3px solid #3172b9; 
-}
 
 .nav-item:not(:last-child) {
     margin-right: 50px;
@@ -123,7 +117,6 @@ ul {
 
 .section-hero {
     background: url('../img/Base-original.jpg') right center no-repeat white;
-    background-size: contain;
 }
 
 .container-hero {
@@ -131,9 +124,7 @@ ul {
     padding-bottom: 130px;
 }
 
-.hero-content {
-    max-width: 50%;
-}
+
 
 .section-heading-hero {
     font-size: 40px;
@@ -185,15 +176,20 @@ ul {
 
 .section-do {
     padding-top: 140px;
-    padding-bottom: 100px;
+    padding-bottom: 99px;
     border-bottom: 1px solid #e4e4e4;
 }
-
 
 .section-do-list {
     display: flex;
     padding-top: 50px;
 }
+
+.section-do-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 .section-do-item {
     display: flex;
@@ -203,8 +199,21 @@ ul {
     border: 1px solid #e4e4e4;
     border-radius: 5px;
     padding: 60px 30px;
-    margin-left: 15px;
 }
+
+.section-do-item:hover .section-do-icon{
+    fill: #fff;
+}
+
+.section-do-item:hover .section-do-item-heading{
+    color: #fff;
+}
+
+.section-do-item:hover .selection-do-item-description{
+    color: #fff;
+}
+
+
 
 .section-do-item-heading {
     margin-bottom: 18px;
@@ -212,10 +221,14 @@ ul {
     line-height: 1;
     font-weight: 600;
     color: #1c1c1c;
+    transition: color 0.3s ease-in-out;
 }
 
 .section-do-icon {
     margin-bottom: 30px;
+    fill: #3172b9;
+    transition: fill 0.3s ease-in-out;
+
 }
 
 .selection-do-item-description {
@@ -225,7 +238,11 @@ ul {
     line-height: 21px;
     text-align: center;
     color: #787878;
+    transition: color 0.3s ease-in-out;
 }
+
+
+
 
 /* !Clients */
 
@@ -244,8 +261,6 @@ ul {
 }
 
 .section-clients-item {
-    flex: 1 1 33.33%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 35px 30px 35px;
@@ -364,7 +379,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
 }
 
@@ -377,22 +392,21 @@ ul {
 }
 
 
-.btn.btn-submit{
+.btn.btn-submit {
     padding: 20px 100px;
     border-radius: 30px;
     border-color: transparent;
     margin-left: 5px;
 }
 
-.input{
+.input {
     margin-right: 10px;
     border-radius: 30px;
     padding: 20px 36px;
     border: 1px solid #787878
-    
 }
 
-.section-description.form-h2-style{
+.section-description.form-h2-style {
     margin-bottom: 40px;
 }
 
@@ -411,7 +425,7 @@ ul {
     height: 100%;
 }
 
-.footer-Left {
+.footer-left {
     display: flex;
     align-items: center;
 }
@@ -490,5 +504,4 @@ ul {
     font-size: 14px;
     line-height: 1;
 }
-
 
